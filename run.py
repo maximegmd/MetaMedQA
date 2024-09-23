@@ -10,12 +10,6 @@ def save_results(model_path, result):
     with open(f'{model_path}/samples.json', 'w') as file:
         json.dump(result, file)
     
-    for r in result:
-        r['acc'] = 1.0 if r['target'] == r['answer'] else 0.0
-        if r['doc']['kind'] == 'Bad':
-            r['doc']['answer_idx'] = 'F'
-            r['doc']['answer'] = "I don't know or cannot answer"
-
     accuracy = sum([e['acc'] for e in result]) / len(result)
     confidence = sum([e['confidence'] for e in result]) / len(result)
 
