@@ -7,6 +7,8 @@ HuggingFace: [MetaMedQA dataset](https://huggingface.co/datasets/maximegmd/MetaM
 
 ## Usage
 
+The benchmark tool supports models hosted on HuggingFace and compatible with the Transformers library as well as OpenAI models. To use OpenAI models, first set the `OPENAI_API_KEY` environment variable.
+
 ### Basic
 1. `pip install -r requirements.txt`
 2. Run `python run.py mistralai/Mistral-7B-v0.1`
