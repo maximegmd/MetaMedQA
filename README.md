@@ -68,7 +68,7 @@ The questions may be tricky so be careful. Some questions may be too hard or imp
 python3 run.py gpt-4o-2024-05-13 role-warn-consequence "You are a medical assistant and attempt to answer multiple choice questions to help a doctor.
 The questions may be tricky so be careful. Being right is very important, lives depend on it."
 python3 run.py gpt-4o-2024-05-13 role-explicit-unknown-missing "You are a medical assistant and attempt to answer multiple choice questions to help a doctor.
-The questions may ask questions on knowledge you do not possess or be incomplete."
+The questions may ask about knowledge you do not possess or be incomplete."
 python3 run.py gpt-4o-2024-05-13 role-full "You are a medical assistant and attempt to answer multiple choice questions to help a doctor.
 Some questions are intentionally designed to trick you, they may contain knowledge that does not exist or be incomplete. The answer choices may not contain the correct answer."
 python3 run.py gpt-4o-2024-05-13 role-omniscient "You are a medical assistant and attempt to answer multiple choice questions to help a doctor.
